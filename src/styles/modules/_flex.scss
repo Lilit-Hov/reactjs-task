@@ -1,0 +1,27 @@
+//flexbox
+.d-flex {
+  @include d-flex;
+}
+
+.flex-wrap {
+  @include flex-wrap;
+}
+
+//justify-content
+.justify-center {
+  @include justify-center;
+}
+
+.justify-space-between {
+  @include justify-space-between;
+}
+
+//align items
+.align-center {
+  @include align-center;
+}
+
+//direction
+.dir-col {
+  @include dir-col;
+}

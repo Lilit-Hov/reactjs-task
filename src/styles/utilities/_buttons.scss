@@ -1,0 +1,57 @@
+.btn {
+  font-family: $font-primary;
+  @include transition($trns-standart);
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: $br-sm;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  text-align: center;
+  font-style: normal;
+  padding: 7px 20px;
+  font-weight: 500;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+
+
+  &:active, &:focus,
+  &.active {
+    background-image: none;
+    outline: 0;
+  }
+
+  &.btn-filled {
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
+
+    @media (hover: hover) {
+      &:hover {
+        border: 1px solid $color-primary;
+        color: $color-primary;
+        background: none;
+      }
+    }
+  }
+
+  &.btn-outline {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    background: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+    }
+  }
+
+  &.sm {
+    min-width: 150px;
+  }
+}
+

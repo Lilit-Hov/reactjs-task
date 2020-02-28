@@ -1,0 +1,137 @@
+@mixin font-face($font-name, $font-face-name, $font-style, $font-weight) {
+  $file-path: $fonts-folder +'/'+ $font-name;
+  @font-face {
+    font-family: $font-face-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($file-path + ".eot");
+    src: url($file-path + ".eot?#iefix") format('embedded-opentype'),
+    url($file-path + ".woff") format('woff'),
+    url($file-path + ".ttf") format('truetype'),
+    url($file-path + ".svg") format('svg');
+  }
+}
+
+@mixin bg-img($image: null, $repeat: null, $size: null, $color: null, $position: null) {
+  @if ($image) {
+    background-image: url($images-folder + $image);
+  }
+  background-color: $color;
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+@mixin position($position: absolute, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+//flex
+@mixin d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin d-inline-flex {
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+}
+
+@mixin justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin justify-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+@mixin justify-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+@mixin flex-wrap {
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap
+}
+
+@mixin dir-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+//animation
+@mixin animation ($delay:null, $duration:null,$timing-function:null, $animation:null) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-timing-function: $timing-function;
+  -webkit-animation-name: $animation;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-name: $animation;
+}
+
+//headings
+@mixin heading($font-family,$size,$color,$line-height,$font-weight) {
+  font-family: $font-family;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  font-size: $size;
+  color: $color;
+}
+
+//horizontal center
+@mixin push-auto {
+  margin-right: auto;
+  margin-left: auto;
+}

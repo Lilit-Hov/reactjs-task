@@ -1,0 +1,36 @@
+@import "src/styles/main";
+
+.template-list {
+  margin-bottom: 100px;
+  @include d-flex;
+
+  .template-item {
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      border: 2px solid $color-border;
+      border-radius: $br-xs;
+      display: inline-block;
+      padding: 15px 55px;
+      text-align: center;
+      margin-right: 15px;
+      min-height: 150px;
+    }
+
+    &.active {
+      label {
+        border-color: $color-primary;
+      }
+    }
+
+    .poster {
+      max-width: 70px;
+    }
+
+    .title {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+//paths
+$fonts-folder:          "../../fonts";
+$images-folder:         "../img/";
+
+//fonts
+$font-primary:          "Roboto Regular", sans-serif;
+$font-secondary:        "Roboto Black", sans-serif;
+
+
+//headings
+$font-size-h1 :      16px;
+$font-size-h2 :      24px;
+$font-size-h3 :      20px;
+$font-size-h4 :      18px;
+$font-size-h5 :      16px;
+$font-size-h6 :      12px;
+
+
+//color usage
+$color-primary:      #f290a7;
+$color-dark:         #606060;
+$color-white:        #ffffff;
+$color-border:       #f0f0f0;
+
+//text color
+$color-text:         $color-dark;
+
+//Text size
+$base-font-size:     14px;
+
+//container
+$cont-padding:       30px;
+$cont-width-xs:      530px;
+$cont-width-sm:      720px;
+$cont-width-md:      952px;
+$cont-width-lg:      1160px;
+$cont-width-xl:      1830px;
+
+$gutter-width:       30px;
+
+
+//Resolutions
+$screen-xl:          1920px;
+$screen-lg:          1200px;
+$screen-md:          992px;
+$screen-sm:          768px;
+$screen-xs:          576px;
+
+//min resolutions
+$screen-xl-min:      $screen-xl;
+$screen-lg-min:      $screen-lg;
+$screen-md-min:      $screen-md;
+$screen-sm-min:      $screen-sm;
+$screen-xs-min:      $screen-xs;
+
+//max resolutions
+$screen-xl-max:      ($screen-xl-min - 1);
+$screen-lg-max:      ($screen-lg-min - 1);
+$screen-md-max:      ($screen-md-min - 1);
+$screen-sm-max:      ($screen-sm-min - 1);
+$screen-xs-max:      ($screen-xs-min - 1);
+
+
+// Transitions
+$trns-standart:      all .4s ease;
+
+//Border radius
+$br-sm:              30px;
+$br-xs:              10px;
