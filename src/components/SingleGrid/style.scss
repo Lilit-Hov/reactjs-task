@@ -1,0 +1,39 @@
+@import "../../styles/main.scss";
+
+.single-grid {
+  padding-bottom: 70px;
+  margin-right: auto;
+  padding-top: 70px;
+  margin-left: auto;
+  max-width: 400px;
+
+  .title {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .post-info {
+    @include justify-space-between;
+    color: $color-light;
+    @include d-flex;
+    font-size: 12px;
+
+    li {
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    i {
+      color: $color-light;
+      font-size: 12px;
+    }
+  }
+
+  .description {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+}
