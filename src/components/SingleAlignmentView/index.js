@@ -1,5 +1,5 @@
 import React from "react";
-import layoutImg from '../../images/page-layout1.svg';
+import layoutImg from '../../images/layout.svg';
 import './style.scss';
 
 class SingleAlignmentView extends React.Component{

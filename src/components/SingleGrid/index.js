@@ -1,5 +1,5 @@
 import React from "react";
-import emailLayout1 from '../../images/email-layout1.svg';
+import layoutImg from '../../images/layout.svg';
 import './style.scss';
 
 class SingleGrid extends React.Component{
@@ -13,7 +13,7 @@ class SingleGrid extends React.Component{
                     <li><i className="icon-date"></i> <span className="date">20/20/2020</span></li>
                     <li><i className="icon-view"></i> <span className="view-count">255</span></li>
                 </ul>
-                <img src={emailLayout1} alt=""/>
+                <img src={layoutImg} alt=""/>
                 <p className="description">Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.

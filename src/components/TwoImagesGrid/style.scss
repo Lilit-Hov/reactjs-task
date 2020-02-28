@@ -1,0 +1,21 @@
+@import "../../styles/utilities/mixins";
+@import "../../styles/utilities/variables";
+
+.two-images-grid {
+  padding-bottom: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 70px;
+  width: 70%;
+
+  .poster {
+    @include bg-img();
+    height: 230px;
+  }
+
+  .date {
+    i {
+      color: $color-text;
+    }
+  }
+}

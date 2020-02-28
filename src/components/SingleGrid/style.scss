@@ -15,6 +15,7 @@
   .post-info {
     @include justify-space-between;
     color: $color-light;
+    margin-bottom: 10px;
     @include d-flex;
     font-size: 12px;
 

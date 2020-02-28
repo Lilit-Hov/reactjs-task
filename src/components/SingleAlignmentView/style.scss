@@ -6,6 +6,10 @@
   padding-top: 70px;
   @include d-flex;
 
+  .box {
+    text-align: center;
+  }
+
   &.center-align {
     @include align-center;
     @include dir-col;
