@@ -1,8 +1,13 @@
 import React from 'react';
 import SelectBox from "./components/SelectBox";
 import TemplateType from "./components/TemplateType";
+import emailLayout1 from './images/email-layout1.svg';
+import emailLayout2 from './images/email-layout2.svg';
+import emailLayout3 from './images/email-layout3.svg';
+import pageLayout1 from './images/page-layout1.svg';
+import pageLayout2 from './images/page-layout2.svg';
+import pageLayout3 from './images/page-layout3.svg';
 import './styles/main.scss';
-
 
 class App extends React.Component {
     constructor() {
@@ -17,18 +22,17 @@ class App extends React.Component {
                     viewType: 'alignment-view',
                     templateTypes: [
                         {
-                            image: 'https://images.pexels.com/photos/3597096/pexels-photo-3597096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: emailLayout1,
                             title: 'Left Align Layout',
                             className: 'left-align',
-                            pageName: 'select-left-align-view'
                         },
                         {
-                            image: 'https://images.pexels.com/photos/3597096/pexels-photo-3597096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: emailLayout2,
                             title: 'Center Align Layout',
                             className: 'center-align'
                         },
                         {
-                            image: 'https://images.pexels.com/photos/3597096/pexels-photo-3597096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: emailLayout3,
                             title: 'Right Align Layout',
                             className: 'right-align'
                         }
@@ -42,19 +46,19 @@ class App extends React.Component {
                     viewType: 'grid-view',
                     templateTypes: [
                         {
-                            image: 'https://images.pexels.com/photos/2318776/pexels-photo-2318776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: pageLayout1,
                             title: 'Single Image Grid',
                             className: 'single-grid',
                             value: 'single-grid'
                         },
                         {
-                            image: 'https://images.pexels.com/photos/2318776/pexels-photo-2318776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: pageLayout2,
                             title: '2 images grid',
                             className: 'two-images-grid',
                             value: 'two-images-grid'
                         },
                         {
-                            image: 'https://images.pexels.com/photos/2318776/pexels-photo-2318776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: pageLayout3,
                             title: 'Slider grid',
                             className: 'slider-grid',
                             value: 'slider-grid'

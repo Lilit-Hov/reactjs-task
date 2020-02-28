@@ -1,12 +1,56 @@
+@import "../../styles/main.scss";
+
 .email-signature {
-  border: 2px solid #00ff18;
+  @include justify-space-around;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  @include d-flex;
 
   &.center-align {
-    border: 2px solid yellow;
+    @include align-center;
+    @include dir-col;
+
+    .box {
+      @include d-flex;
+      @include align-center;
+
+      .poster {
+        margin-right: 30px;
+      }
+    }
+
+    .user-name {
+      text-align: center;
+    }
+
+    .position {
+      margin-bottom: 10px;
+      text-align: center;
+    }
   }
 
   &.right-align {
-    border: 2px solid green;
+    @include row-reverse;
+  }
+
+  .poster {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    @include bg-img;
+    height: 130px;
+    width: 130px;
+  }
+
+  .position {
+    color: $color-light;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .description {
+    color: $color-light;
+    max-width: 260px;
   }
 }
 

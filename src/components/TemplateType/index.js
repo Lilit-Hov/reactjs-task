@@ -31,8 +31,8 @@ class TemplateType extends React.Component {
                                            })}
                                            value={`option-${index}`}
                                            name={this.props.items.radioName}/>
-                                    <img src={item.image} className="poster" />
-                                    <h4 className="title">{item.title}</h4>
+                                    <img src={item.image} className="poster" alt=""/>
+                                    <h6 className="title">{item.title}</h6>
                                 </label>
                             </div>
                         ))
@@ -44,7 +44,9 @@ class TemplateType extends React.Component {
                     <SingleAlignmentView className={this.state.singleViewClass}  />  :
                     <PageLayout layoutType={this.props.items.templateTypes[this.state.selectedRadio]}/>
                 }
-                <button className="btn btn-outline" onClick={exportHTML}>Export as HTML</button>
+                <div className="text-right">
+                    <button className="btn btn-outline push-auto" onClick={exportHTML}>Export as HTML</button>
+                </div>
             </div>
         )
     }

@@ -1,12 +1,12 @@
-@import "./variables";
+@import "variables";
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7q722y');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?7q722y#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?7q722y') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?7q722y') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?7q722y##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yg3seg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yg3seg#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yg3seg') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yg3seg') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yg3seg##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,67 +27,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-date-icon {
+.icon-facebook {
   &:before {
-    content: $icon-date-icon; 
+    content: $icon-facebook; 
   }
 }
-.icon-facebook-icon .path1 {
+.icon-instagram {
   &:before {
-    content: $icon-facebook-icon-path1;  
-    color: rgb(60, 90, 155);
+    content: $icon-instagram; 
   }
 }
-.icon-facebook-icon .path2 {
+.icon-Twitter {
   &:before {
-    content: $icon-facebook-icon-path2;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
+    content: $icon-Twitter; 
   }
 }
-.icon-instagram-icon .path1 {
+.icon-date {
   &:before {
-    content: $icon-instagram-icon-path1;  
-    color: rgb(45, 45, 55);
+    content: $icon-date; 
   }
 }
-.icon-instagram-icon .path2 {
+.icon-view {
   &:before {
-    content: $icon-instagram-icon-path2;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-instagram-icon .path3 {
-  &:before {
-    content: $icon-instagram-icon-path3;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-instagram-icon .path4 {
-  &:before {
-    content: $icon-instagram-icon-path4;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-twitter-icon .path1 {
-  &:before {
-    content: $icon-twitter-icon-path1;  
-    color: rgb(26, 178, 232);
-  }
-}
-.icon-twitter-icon .path2 {
-  &:before {
-    content: $icon-twitter-icon-path2;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-view-icon {
-  &:before {
-    content: $icon-view-icon; 
+    content: $icon-view; 
   }
 }
 

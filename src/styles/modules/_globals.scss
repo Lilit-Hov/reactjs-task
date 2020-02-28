@@ -1,15 +1,11 @@
-img {
-  max-width: 100%;
-}
+.social-icons {
+  @include d-inline-flex;
 
-.bold {
-  font-weight: 800;
-}
+  li {
+    margin-right: 10px;
 
-.full-width {
-  width: 100%;
-}
-
-.full-height {
-  height: 100%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

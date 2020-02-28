@@ -23,32 +23,8 @@ body {
 
 //container styles
 .container {
-  padding-left: ($cont-padding / 2);
-  padding-right: ($cont-padding / 2);
-  margin-right: auto;
-  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 650px;
   width: 100%;
-
-  @media (min-width: $screen-xs-min) {
-    width: ($cont-width-xs + $cont-padding);
-  }
-  @media (min-width: $screen-sm-min) {
-    width: ($cont-width-sm + $cont-padding);
-  }
-  @media (min-width: $screen-md-min) {
-    width: ($cont-width-md + $cont-padding);
-  }
-  @media (min-width: $screen-lg-min) {
-    width: ($cont-width-lg + $cont-padding);
-  }
-  @media (min-width: $screen-xl-min) {
-    width: ($cont-width-xl + $cont-padding);
-  }
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-  @include flex-wrap;
-  @include d-flex;
 }

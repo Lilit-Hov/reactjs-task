@@ -55,3 +55,48 @@
   }
 }
 
+.btn-social {
+  @include transition($trns-standart);
+  text-align: center;
+  border-radius: 50%;
+  line-height: 23px;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  height: 23px;
+  width: 23px;
+
+  &.facebook {
+    background-color: #3b5999;
+
+    i {
+      font-size: 12px;
+    }
+  }
+
+  &.twitter {
+    background-color: #55acee;
+
+    i {
+      font-size: 9px;
+    }
+  }
+
+  &.instagram {
+    background-color: #131418;
+
+    i {
+      font-size: 11px;
+    }
+  }
+
+  i {
+    color: $color-white;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}

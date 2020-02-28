@@ -1,7 +1,7 @@
 @import "src/styles/main";
 
 .template-list {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   @include d-flex;
 
   .template-item {
@@ -13,10 +13,13 @@
       border: 2px solid $color-border;
       border-radius: $br-xs;
       display: inline-block;
-      padding: 15px 55px;
       text-align: center;
       margin-right: 15px;
-      min-height: 150px;
+      padding: 15px;
+      height: 100%;
+      @include d-flex;
+      @include dir-col;
+      @include justify-space-between;
     }
 
     &.active {
@@ -26,7 +29,9 @@
     }
 
     .poster {
-      max-width: 70px;
+      margin-bottom: 10px;
+      max-width: 150px;
+      width: 100%;
     }
 
     .title {
