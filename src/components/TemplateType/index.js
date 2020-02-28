@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import SingleAlignmentView from "../SingleAlignmentView";
 import PageLayout from "../PageLayout";
+import {exportHTML} from "../../helpers";
 
 
 class TemplateType extends React.Component {
@@ -37,11 +38,13 @@ class TemplateType extends React.Component {
                         ))
                     }
                 </form>
+
                 {
                     this.props.items.value === 0 ?
-                    <SingleAlignmentView className={this.state.singleViewClass}  /> :
+                    <SingleAlignmentView className={this.state.singleViewClass}  />  :
                     <PageLayout layoutType={this.props.items.templateTypes[this.state.selectedRadio]}/>
                 }
+                <button className="btn btn-outline" onClick={exportHTML}>Export as HTML</button>
             </div>
         )
     }

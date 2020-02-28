@@ -2,10 +2,6 @@ import React from "react";
 import './style.scss';
 
 class SelectBox extends React.Component {
-    constructor() {
-        super();
-    };
-
     render() {
         return(
             <div>

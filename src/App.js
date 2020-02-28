@@ -1,7 +1,7 @@
 import React from 'react';
 import SelectBox from "./components/SelectBox";
 import TemplateType from "./components/TemplateType";
-import './styles/main.scss'
+import './styles/main.scss';
 
 
 class App extends React.Component {
@@ -19,7 +19,8 @@ class App extends React.Component {
                         {
                             image: 'https://images.pexels.com/photos/3597096/pexels-photo-3597096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                             title: 'Left Align Layout',
-                            className: 'left-align'
+                            className: 'left-align',
+                            pageName: 'select-left-align-view'
                         },
                         {
                             image: 'https://images.pexels.com/photos/3597096/pexels-photo-3597096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
