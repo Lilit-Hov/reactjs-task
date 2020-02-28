@@ -7,7 +7,7 @@ class SingleAlignmentView extends React.Component{
         return(
                <div>
                    <div className={`email-signature ${this.props.className}`}>
-                       <div className="box">
+                       <div className="box mr-2">
                            <div style={{backgroundImage: `url(${layoutImg})`}} className="poster"></div>
                            <ul className="social-icons">
                                <li><button className="btn-social facebook"><i className="icon-facebook"></i></button></li>

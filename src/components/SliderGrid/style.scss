@@ -1,0 +1,27 @@
+@import "src/styles/utilities/mixins";
+
+.slider-grid {
+  margin-bottom: 70px;
+  margin-top: 70px;
+
+  .slider-list {
+    width: 30px;
+
+    li {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .slider-active {
+    @include bg-img;
+    width: 260px;
+  }
+
+  .details {
+    max-width: 250px;
+  }
+}

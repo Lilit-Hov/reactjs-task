@@ -1,7 +1,7 @@
 // Headings
 // -------------------------
 h1, .h1 {
-  @include heading($font-primary,$font-size-h1,$color-text,20px,900);
+  @include heading($font-secondary,$font-size-h1,$color-text,20px,normal);
 
   @media (max-width: $screen-sm-max) {
     font-size: floor($font-size-h1 / 1.14);
@@ -9,7 +9,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  @include heading($font-primary,$font-size-h2,$color-text,30px,bold);
+  @include heading($font-secondary,$font-size-h2,$color-text,30px,normal);
 
   @media (max-width: $screen-sm-max) {
     font-size: floor($font-size-h2 / 1.14);
@@ -17,7 +17,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @include heading($font-primary,$font-size-h3,$color-text,25px,bold);
+  @include heading($font-secondary,$font-size-h3,$color-text,25px,normal);
 
   @media (max-width: $screen-sm-max) {
     font-size: floor($font-size-h3 / 1.14);
@@ -25,7 +25,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  @include heading($font-primary,$font-size-h4,$color-text,23px,300);
+  @include heading($font-secondary,$font-size-h4,$color-text,23px,normal);
 
   @media (max-width: $screen-sm-max) {
     font-size: floor($font-size-h4 / 1.14);
@@ -33,7 +33,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  @include heading($font-secondary,$font-size-h5,$color-text,20px,300);
+  @include heading($font-secondary,$font-size-h5,$color-text,20px,normal);
 
   @media (max-width: $screen-sm-max) {
     font-size: floor($font-size-h5 / 1.14);
@@ -41,7 +41,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  @include heading($font-primary,$font-size-h6,#616D7D,15px,normal);
+  @include heading($font-secondary,$font-size-h6,#616D7D,15px,normal);
 
   @media (max-width: $screen-sm-max) {
     font-size: floor($font-size-h6 / 1.14);

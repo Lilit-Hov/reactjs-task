@@ -1,3 +1,7 @@
+@import "../utilities/variables";
+@import "src/styles/utilities/mixins";
+
+
 .social-icons {
   @include d-inline-flex;
 
@@ -6,6 +10,27 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+
+.bullet-list {
+  li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      @include position($top: 6px,$left:0);
+      background-color: $color-primary;
+      border-radius: 50%;
+      height: 4px;
+      width: 4px;
     }
   }
 }
