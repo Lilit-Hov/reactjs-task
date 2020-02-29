@@ -45,7 +45,7 @@ class TemplateType extends React.Component {
                     <PageLayout layoutType={this.props.items.templateTypes[this.state.selectedRadio]}/>
                 }
                 <div className="text-right">
-                    <button className="btn btn-outline push-auto" onClick={exportHTML}>Export as HTML</button>
+                    <button className="btn btn-outline" onClick={exportHTML}>Export as HTML</button>
                 </div>
             </div>
         )

@@ -47,18 +47,6 @@
   transition: $args;
 }
 
-@mixin transform($transforms) {
-  -webkit-transform: $transforms;
-  -moz-transform: $transforms;
-  -ms-transform: $transforms;
-  transform: $transforms;
-}
-
-@mixin box-shadow($shadow...) {
-  -webkit-box-shadow: $shadow;
-  box-shadow: $shadow;
-}
-
 //flex
 @mixin d-flex {
   display: -webkit-box;
@@ -119,20 +107,6 @@
   flex-direction: row-reverse;
 }
 
-
-//animation
-@mixin animation ($delay:null, $duration:null,$timing-function:null, $animation:null) {
-  -webkit-animation-delay: $delay;
-  -webkit-animation-duration: $duration;
-  -webkit-animation-timing-function: $timing-function;
-  -webkit-animation-name: $animation;
-
-  animation-delay: $delay;
-  animation-duration: $duration;
-  animation-timing-function: $timing-function;
-  animation-name: $animation;
-}
-
 //headings
 @mixin heading($font-family,$size,$color,$line-height,$font-weight) {
   font-family: $font-family;
@@ -140,10 +114,4 @@
   font-weight: $font-weight;
   font-size: $size;
   color: $color;
-}
-
-//horizontal center
-@mixin push-auto {
-  margin-right: auto;
-  margin-left: auto;
 }
