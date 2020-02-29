@@ -1,4 +1,5 @@
-@import "src/styles/main";
+@import "../../styles/utilities/mixins";
+@import "../../styles/utilities/variables";
 
 .template-list {
   margin-bottom: 30px;
@@ -11,15 +12,15 @@
 
     label {
       border: 2px solid $color-border;
+      @include justify-space-between;
       border-radius: $br-xs;
       display: inline-block;
       text-align: center;
       margin-right: 15px;
+      @include dir-col;
+      @include d-flex;
       padding: 15px;
       height: 100%;
-      @include d-flex;
-      @include dir-col;
-      @include justify-space-between;
     }
 
     &.active {
@@ -32,10 +33,6 @@
       margin-bottom: 10px;
       max-width: 150px;
       width: 100%;
-    }
-
-    .title {
-      font-size: 14px;
     }
   }
 }

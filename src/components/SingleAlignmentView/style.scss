@@ -1,4 +1,5 @@
-@import "../../styles/main.scss";
+@import "../../styles/utilities/variables";
+@import "../../styles/utilities/mixins";
 
 .email-signature {
   @include justify-space-around;

@@ -12,7 +12,7 @@ class SliderGrid extends React.Component{
                     <li><img src={layoutImg} alt=""/></li>
                     <li><img src={layoutImg} alt=""/></li>
                 </ul>
-                <div style={{backgroundImage:`url(${layoutImg})`}} className="slider-active"></div>
+                <div style={{backgroundImage:`url(${layoutImg})`}} className="slider-active" />
                 <div className="details">
                     <h4>Title</h4>
                     <p className="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting

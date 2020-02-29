@@ -44,6 +44,7 @@ class TemplateType extends React.Component {
                     <SingleAlignmentView className={this.state.singleViewClass}  />  :
                     <PageLayout layoutType={this.props.items.templateTypes[this.state.selectedRadio]}/>
                 }
+
                 <div className="text-right">
                     <button className="btn btn-outline" onClick={exportHTML}>Export as HTML</button>
                 </div>
